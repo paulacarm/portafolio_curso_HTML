@@ -1,0 +1,64 @@
+* {
+	box-sizing: border-box;
+}
+.lateral{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 350px;
+	background-color: #56B3AB;
+	padding: 1em;
+}
+/*Perfil overflow hidden:  todo lo que escape de la caja de 50 px que no se vea*/
+.perfil__circulo{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	margin: 0;
+
+}
+/*100% de su padre, osea 50 px*/
+.perfil__foto{
+	width: 100%;
+
+}
+.perfil__nombre{
+	color: #fff;
+	font-size: 20px;
+	width: 250px;
+	margin-left: 0.5em;
+}
+/*alinea las cajas implicadas y centra de forma vertical*/
+.perfil__nombre, .perfil__circulo{
+	display: inline-block;
+	vertical-align: middle;
+}
+/*Información*/
+.informacion{
+	color: #0F6A62;
+	position: absolute;
+	bottom: 1em;
+
+}
+.informacion__titulo{
+	font-size: 18px;
+
+}
+.informacion__descripcion{
+
+	text-align: justify;
+}
+.habilidades{
+	padding: 0;
+}
+.habilidad{
+	background-color: #0F6A62;
+	color:#fff ;
+	font-size: 12px;
+	display: inline-block;
+	padding: .5em;
+	text-transform: uppercase;
+
+}
